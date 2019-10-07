@@ -2152,6 +2152,42 @@ input, select, textarea {
 						}
 
 				}
+/* Modals */
+.project {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+.modalOpen {
+	text-align: center;
+	margin: 1rem;
+}
+
+.modalOpen a{
+	text-decoration: none;
+	background-color: #9ACC65;
+	padding: 0.5rem 1rem;
+	color: white; 
+	border-radius: 2px;
+}
+
+.modal a.projectLink {
+	color:#487719;
+	text-decoration: none;
+}
+.modal a.close  {
+	background:#E0DFE4;
+	padding: 0.5rem 1rem;
+	border-radius: 2px;
+	color: black;
+	text-decoration: none;
+	margin-bottom: 4rem;
+}
+
+.modal p {
+	margin-top: 2rem;
+}
+
 
 /* Footer */
 

@@ -206,7 +206,6 @@
 						.css('visibility', 'hidden');
 
 				});
-
-		}
+			}
 
 })(jQuery);

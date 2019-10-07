@@ -9,6 +9,12 @@
 		<title>Heather Nuffer Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<!-- jQuery Modal -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+		
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -84,30 +90,120 @@
 									They represent a variety of frameworks, interests, and designs. 
 								</p>
 								<section>
+
 									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
+
+										<div class="col-4 col-6-medium col-12-small project">
 											<a href="https://github.com/ethyl2/responsive-web-design-I" class="image fit" target="_blank">
 												<img src="images/bigIdeaScreenshot.png" alt="bigIdea website screenshot"></a>
+											<!-- Modal Content-->
+											<div id="modal1" class="modal">
+												<h2>Responsive Web Design Project - Business Landing Page</h2>
+												<p>I added media queries to the site to make it more responsive for mobile and tablet devices.</p>
+												<p><a class="projectLink" href="https://github.com/ethyl2/responsive-web-design-I" target="_blank">Respository on GitHub</a></p>
+												<a href="#" rel="modal:close" class="close">Close</a>
+	  										</div>
+	  
+											<!-- Link to open the modal -->
+											<div class="modalOpen">
+												<p><a href="#modal1" rel="modal:open">Responsive Landing Page</a></p>
+											</div>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
+
+										<div class="col-4 col-6-medium col-12-small project">
 											<a href="https://codepen.io/ethyl2/full/wZGJLY" class="image fit" target="_blank">
 												<img src="images/pomodoroScreenshot.png" alt="pomodoro app screenshot"></a>
+											
+											<!-- Modal Content-->
+											<div id="modal2" class="modal">
+												<h2>Pomodoro Clock</h2>
+												<p>React app countdown timer to use for the Pomodoro technique of learning.</p>
+												<p><a class="projectLink" href="https://codepen.io/ethyl2/full/wZGJLY" target="_blank">Project on CodePen</a></p>
+												<a href="#" rel="modal:close" class="close">Close</a>
+											</div>
+	
+											<!-- Link to open the modal -->
+											<div class="modalOpen">
+												<p><a href="#modal2" rel="modal:open">Pomodoro Clock App</a></p>
+											</div>
 										</div>
+										
+										
+										
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="https://codepen.io/ethyl2/full/ejZWej" class="image fit" target="_blank">
 												<img src="images/cssGridscreenShot.png" alt="css grid tutorial screenshot"></a>
+											<!-- Modal Content-->
+											<div id="modal3" class="modal">
+													<h2>Technical Documentation Page: Guide to CSS Grid</h2>
+													<p>This project explains CSS Grid concepts. Clicking elements on the left menu 
+														takes the user directly to the relevant topic's discussion.</p>
+													<p><a class="projectLink" href="https://codepen.io/ethyl2/full/ejZWej" target="_blank">Project on CodePen</a></p>
+													<a href="#" rel="modal:close" class="close">Close</a>
+												</div>
+		
+											<!-- Link to open the modal -->
+											<div class="modalOpen">
+												<p><a href="#modal3" rel="modal:open">CSS Grid Tutorial</a></p>
+											</div>
 										</div>
+										
+
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="http://bycenter.org/" class="image fit" target="_blank">
 												<img src="images/BYCenterScreenshot.png" alt="Brigham Young Center website screenshot"></a>
+											<!-- Modal Content-->
+											<div id="modal4" class="modal">
+													<h2>The Brigham Young Center Website</h2>
+													<p>I designed and created the front-end pages for a non-profit foundation’s project about Brigham Young’s writings.
+													Used Django as the framework and Bootstrap for layout and responsiveness.</p>
+													<p><a class="projectLink" href="http://www.bycenter.org/" target="_blank">BY Center</a></p>
+													<a href="#" rel="modal:close" class="close">Close</a>
+												</div>
+		
+											<!-- Link to open the modal -->
+											<div class="modalOpen">
+												<p><a href="#modal4" rel="modal:open">The Brigham Young Center</a></p>
+											</div>
 										</div>
+										
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="http://heathernuffer.pythonanywhere.com/" class="image fit" target="_blank">
 												<img src="images/djangoScreenshot.png" alt="Django blog screenshot"></a>
-										</div>
+											<!-- Modal Content-->
+											<div id="modal5" class="modal">
+												<h2>Django Blog</h2>
+												<p>This sample blog project discusses web development tools and uses Django, a Python web framework. 
+													The tutorial at Django Girls got me started with this project..</p>
+												<p><a class="projectLink" href="http://heathernuffer.pythonanywhere.com/" target="_blank">Blog</a></p>	
+												<p><a class="projectLink" href="https://github.com/ethyl2/blog_with_django" target="_blank">Project on GitHub</a></p>
+												<a href="#" rel="modal:close" class="close">Close</a>
+											</div>
+		
+											<!-- Link to open the modal -->
+											<div class="modalOpen">
+												<p><a href="#modal5" rel="modal:open">Django Blog</a></p>
+											</div>
+										
+											</div>
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="https://ethyl2.github.io/chickens-tutorial/" class="image fit" target="_blank">
 												<img src="images/beanbagsTutorialScreenshot.png" alt="Chicken beanbags tutorial website screenshot"></a>
+											<!-- Modal Content-->
+											<div id="modal6" class="modal">
+													<h2>Chicken Beanbag Tutorial</h2>
+													<p>I designed and implemented a photo-rich tutorial on how to sew chicken beanbags.
+													I wrote detailed text so that a beginning sewer can successfully make this project.</p>
+													<p><a class="projectLink" href="https://github.com/ethyl2/chickens-tutorial" target="_blank">Project on GitHub</a></p>
+													<p><a class="projectLink" href="https://ethyl2.github.io/chickens-tutorial/" target="_blank">Project on GitHub</a></p>
+													<a href="#" rel="modal:close" class="close">Close</a>
+												</div>
+		
+											<!-- Link to open the modal -->
+											<div class="modalOpen">
+												<p><a href="#modal6" rel="modal:open">Sewing Tutorial</a></p>
+											</div>
+										
 										</div>
 										
 									</div>
