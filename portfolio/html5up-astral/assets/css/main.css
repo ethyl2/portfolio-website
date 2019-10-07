@@ -2174,6 +2174,7 @@ input, select, textarea {
 .modal a.projectLink {
 	color:#487719;
 	text-decoration: none;
+	text-align: center;
 }
 .modal a.close  {
 	background:#E0DFE4;
@@ -2181,7 +2182,6 @@ input, select, textarea {
 	border-radius: 2px;
 	color: black;
 	text-decoration: none;
-	margin-bottom: 4rem;
 }
 
 .modal p {
