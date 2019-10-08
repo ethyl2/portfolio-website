@@ -2154,6 +2154,7 @@ input, select, textarea {
 						}
 
 				}
+
 /* Modals */
 .project {
 	display: flex;
@@ -2240,3 +2241,9 @@ input, select, textarea {
 			}
 
 		}
+
+/* About Section */
+
+#main > .panel.intro header p {
+	font-size: 0.9em;
+}
