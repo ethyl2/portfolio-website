@@ -1786,6 +1786,8 @@ input, select, textarea {
 		text-align: center;
 		height: 4.25em;
 		cursor: default;
+		display: flex;
+		flex-flow: row nowrap;
 	}
 
 		#nav a {
