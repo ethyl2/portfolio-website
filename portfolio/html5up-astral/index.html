@@ -98,13 +98,37 @@
 					<div class="row">
 
 						<div class="col-4 col-6-medium col-12-small project">
+							<a href="https://github.com/ethyl2/React-Github-User-Card" class="image fit"
+								target="_blank">
+								<img src="images/ReactGitHubUserCardApp.png" alt="GitHub Cards website screenshot"></a>
+							<!-- Modal Content-->
+							<div id="modal7" class="modal">
+								<h2>GitHub User</h2>
+								<p>This project is built with React and uses axios to access data from GitHub's API to populate a page
+									with info about a GitHub user. The GitHub calendar for the user is also displayed.
+									Entering a username reloads the page with information for that user.
+								</p>
+								<p><a class="projectLink" href="https://github.com/ethyl2/React-Github-User-Card"
+										target="_blank">Respository on GitHub</a></p>
+								<p><a class="projectLink" href="https://github-user.now.sh/"
+									target="_blank">github-user.now.sh</a></p>
+								<a href="#" rel="modal:close" class="close">Close</a>
+							</div>
+
+							<!-- Link to open the modal -->
+							<div class="modalOpen">
+								<p><a href="#modal7" rel="modal:open">GitHub User</a></p>
+							</div>
+						</div>
+						
+						<div class="col-4 col-6-medium col-12-small project">
 							<a href="https://ethyl2.github.io/github-usercard/" class="image fit"
 								target="_blank">
 								<img src="images/GitHubCardsScreenshot.png" alt="GitHub Cards website screenshot"></a>
 							<!-- Modal Content-->
 							<div id="modal7" class="modal">
 								<h2>GitHub Followers Cards</h2>
-								<p>This project uses axios to access data from GitHub's API to populate cards displaying
+								<p>This project uses vanilla JavaScript, with axios to access data from GitHub's API to populate cards displaying
 									stats of a user's followers. The GitHub calendars for the user and followers are also displayed.
 									Entering a username reloads the page with that user's followers.
 								</p>
